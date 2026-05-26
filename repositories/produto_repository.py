@@ -2,7 +2,7 @@ from sqlalchemy import Session
 
 from models.produto_model import Produto
 
-class ProdutoRespository:
+class ProdutoRepository:
     #LISTAR TODOS OS PRODUTOS
     def listar(self, db:Session):
         return db.query(Produto).all()
