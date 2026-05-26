@@ -11,7 +11,7 @@ class ProdutoService:
     
     #MÉTODO PARA VALIDAR CADASTRO
     def cadastrar(self, db, produto):
-        return self.repository.cadastrar(produto)
+        return self.repository.cadastrar(db, produto)
     
     #MÉTODO PARA VALIDAR A EXCLUSÃO
     def excluir(self, db, id):
